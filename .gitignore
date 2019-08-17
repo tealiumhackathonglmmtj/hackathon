@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 /node_modules
+=======
+node_modules
+>>>>>>> e295bc317f9199c62914ca567c56cbc623a2daaa
 .auth
 .config
