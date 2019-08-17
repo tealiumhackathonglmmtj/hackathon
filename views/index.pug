@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Tealium Hackathon
+  form(method="POST", action='/data')
+    .form-group
+    label(for="lookup") Lookup: &nbsp;
+    input#lookup.form-control(type='text', name='lookup')
+    br
+    br
+    button.btn.btn-primary(type='submit') Submit
+  
