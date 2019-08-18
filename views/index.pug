@@ -1,6 +1,12 @@
-
 extends layout
 
 block content
+
   h1= title
-  p Welcome to #{title}
+  a(href='/data') Get Data
+
+  p Audiences: #{user[0].audiences}
+  p Badges: #{user[0].badges}
+  p Flags: 
+  each i in user[0].flags
+    p= i
