@@ -3,10 +3,25 @@ extends layout
 block content
 
   h1= title
+
   a(href='/data') Get Data
 
-  p Audiences: #{user[0].audiences}
-  p Badges: #{user[0].badges}
-  p Flags: 
-  each i in user[0].flags
-    p= i
+  p <strong>Audiences</strong> 
+  p #{user[0].audiences}
+  p <strong>Audiences Joined At</strong>
+  each elem, index in user[0].audiences
+    p #{index}: #{elem}
+  p <strong>Badges</strong>
+  p #{user[0].badges}
+  p <strong>Flags</strong>
+  each elem, index in user[0].flags
+    p #{index}: #{elem}
+  p <strong>Metrics</strong>
+  each elem, index in user[0].metrics
+    p #{index}: #{elem}
+  p <strong>Properties</strong>
+  each elem, index in user[0].metrics
+    p #{index}: #{elem}
+  p <strong>Current Visit</strong>
+  each elem, index in user[0].current_visit
+    p #{index}: #{elem}

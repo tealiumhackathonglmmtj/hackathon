@@ -27,7 +27,7 @@ router.get('/data', function(req, res, next) {
     for (var property in parsedResponse[0].flags){
       flags.push(property)
     }
-    res.render('index', { title: 'Tealium Hackathon', user: parsedResponse})
+    res.render('index', { title: 'Tealium Hackathon', user: parsedResponse, flags: flags})
   })
 });
 
